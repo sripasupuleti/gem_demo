@@ -18,7 +18,7 @@ Terraform code for removing image exif metadata
 
 **Lambda Function steps:**
 1. Create a S3 bucket trigger notification i.e, it invokes the lamba as soon as file uploaded in S3 bucket tests3exifa
-2.import boto3,json,os,PIL,Image etc
+2. import boto3,json,os,PIL,Image etc
 3. Get the Source bucket name(tests3exifa) and filename
 4. print the Source(tests3exifa) & target(tests3exifb) bucket names and filename
 5. print Metadata using s3.head_object 
